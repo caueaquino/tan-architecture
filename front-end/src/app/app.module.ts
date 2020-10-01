@@ -1,13 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
-import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { RecoverPasswordComponent } from './pages/recover-password/recover-password.component';
-import { LoadingComponent } from './components/loading/loading.component';
+import { AppComponent } from 'src/app/app.component';
+import { SigninComponent } from 'src/app/pages/signin/signin.component';
+import { LoadingComponent } from 'src/app/components/loading/loading.component';
+import { MainLayoutComponent } from 'src/app/layout/main-layout/main-layout.component';
+import { AuthLayoutComponent } from 'src/app/layout/auth-layout/auth-layout.component';
+import { RecoverPasswordComponent } from 'src/app/pages/recover-password/recover-password.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     AuthLayoutComponent,
     SigninComponent,
     RecoverPasswordComponent,
-    LoadingComponent
+    LoadingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
